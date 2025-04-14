@@ -2,7 +2,7 @@ const hr = document.getElementById("hours");
 const min = document.getElementById("min");
 const sec = document.getElementById("sec");
 
-function dispalyTime(){
+function whatTimeIsIt(){
   let date = new Date();
   
   let hours = date.getHours();
@@ -18,4 +18,4 @@ function dispalyTime(){
   sec.style.transform = `rotate(${secRotate}deg)`;
 }
 
-setInterval(dispalyTime, 1000);
+setInterval(whatTimeIsIt, 1000);
